@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RelativeInterior}
+\pmcreated{2013-03-22 16:20:07}
+\pmmodified{2013-03-22 16:20:07}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{relative interior}
+\pmrecord{13}{38466}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52A07}
+\pmclassification{msc}{52A15}
+\pmclassification{msc}{51N10}
+\pmclassification{msc}{52A20}
+\pmdefines{relative boundary}
+\pmdefines{relatively open}
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+
+\begin{document}
+Let $S$ be a subset of the $n$-dimensional Euclidean space $\mathbb{R}^n$.  The \emph{relative interior} of $S$ is the interior of $S$ considered as a subset of its affine hull $\operatorname{Aff}(S)$, and is denoted by $\operatorname{ri}(S)$.
+
+The difference between the interior and the relative interior of $S$ can be illustrated in the following two examples.  Consider the closed unit square $$I^2:=\lbrace (x,y,0)\mid 0\le x, y\le 1\rbrace$$ in $\mathbb{R}^3$.  Its interior is $\varnothing$, the empty set.  However, its relative interior is $$\operatorname{ri}(I^2)=\lbrace (x,y,0)\mid 0< x,y< 1\rbrace,$$ since $\operatorname{Aff}(I^2)$ is the $x$-$y$ plane $\lbrace (x,y,0)\mid x,y\in\mathbb{R}\rbrace$. Next, consider the closed unit cube $$I^3:=\lbrace (x,y,z)\mid 0\le x, y, z\le 1\rbrace$$ in $\mathbb{R}^3$.  The interior and the relative interior of $I^3$ are the same: $$\operatorname{int}(I^3)=\operatorname{ri}(I^3)=\lbrace (x,y,z)\mid 0< x,y,z< 1\rbrace.$$
+
+\textbf{Remarks}.  
+\begin{itemize}
+\item As another example, the relative interior of a point is the point, whereas the interior of a point is $\varnothing$.
+\item It is true that if $T\subseteq S$, then $\operatorname{int}(T)\subseteq \operatorname{int}(S)$.  However, this is not the case for the relative interior operator $\operatorname{ri}$, as shown by the above two examples: $\varnothing\neq I^2\subseteq I^3$, but $\operatorname{ri}(I^2)\cap \operatorname{ri}(I^3)=\varnothing$.
+\item The companion concept of the relative interior of a set $S$ is the \emph{relative boundary} of $S$: it is the boundary of $S$ in $\operatorname{Aff}(S)$, denoted by $\operatorname{rbd}(S)$.  Equivalently, $\operatorname{rbd}(S)=\overline{S}-\operatorname{ri}(S)$, where $\overline{S}$ is the closure of $S$.
+\item $S$ is said to be \emph{relatively open} if $S=\operatorname{ri}(S)$.
+\item All of the definitions above can be generalized to convex sets in a topological vector space.
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

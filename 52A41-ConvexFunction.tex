@@ -1,0 +1,108 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ConvexFunction}
+\pmcreated{2013-03-22 11:46:26}
+\pmmodified{2013-03-22 11:46:26}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{convex function}
+\pmrecord{28}{30231}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52A41}
+\pmclassification{msc}{26A51}
+\pmclassification{msc}{26B25}
+\pmclassification{msc}{55Q05}
+\pmclassification{msc}{18G30}
+\pmclassification{msc}{18B40}
+\pmclassification{msc}{20J05}
+\pmclassification{msc}{20E07}
+\pmclassification{msc}{18-01}
+\pmclassification{msc}{20L05}
+\pmrelated{JensensInequality}
+\pmrelated{LogarithmicallyConvexFunction}
+\pmdefines{concave function}
+\pmdefines{strictly convex function}
+\pmdefines{strictly concave function}
+\pmdefines{strictly convex}
+\pmdefines{strictly concave}
+\pmdefines{epigraph}
+\pmdefines{effective domain}
+\pmdefines{concave}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+\begin{document}
+{\bf Definition} Suppose $\Omega$ is a convex set in a vector space over $\sR$
+(or $\sC$), and suppose $f$ is a function $f:\Omega\to \sR$.
+If for any $x,y\in \Omega$, $x\neq y$ and any $\lambda \in (0,1)$, we have
+ $$f\Big( \lambda x + (1-\lambda)y\Big)\leq \lambda f(x)+(1-\lambda)f(y),$$
+we say that $f$ is a \emph{convex function}.
+If for any $x,y\in \Omega$ and any $\lambda \in (0,1)$, we have
+ $$f\Big( \lambda x + (1-\lambda)y\Big)\geq \lambda f(x)+(1-\lambda)f(y),$$
+we say that $f$ is a \emph{concave function}. If either of the  inequalities
+are strict, then we say that $f$ is a \emph{strictly convex function},
+or a \emph{strictly concave function}, respectively.
+
+\subsubsection*{Properties}
+ \begin{itemize}
+\item A function $f$ is a (strictly) convex function if and only if $-f$ is
+a (strictly) concave function. For this reason, most of the below discussion only 
+focuses on convex functions. Analogous result holds for concave functions. 
+ \item On $\sR$, a continuous function is convex 
+if and only if for all $x,y\in \sR$, we have
+ $$f\left(\frac{x+y}{2}\right)\le\frac{f(x)+f(y)}{2}.$$
+\item  On $\sR$, a once differentiable function is convex if and only if $f'$
+is monotone increasing. 
+ \item Suppose $f$ is twice continuously differentiable function on $\sR$.
+Then $f$ is convex if and only if $f'' \ge 0$. 
+If $f''>0$, then $f$ is strictly convex.
+\item A local minimum of a convex function is a global minimum.
+See \PMlinkname{this page}{ExtremalValueOfConvexconcaveFunctions}.
+ \end{itemize}
+
+
+\subsubsection*{Examples}
+\begin{itemize}
+\item $e^x$,$e^{-x}$, and $x^2$ are convex functions on $\sR$. Also, $x^4$ is strictly
+convex, but $12x^2$ vanishes at $x=0$. 
+\item A \PMlinkname{norm}{NormedVectorSpace} is a convex function.
+\end{itemize}
+
+\subsubsection*{Remark.}  
+We may generalize the above definition of a convex function to an that of an extended real-valued function whose domain is not necessarily a convex set.  First, we define what an \emph{epigraph} of a function is.
+
+Let $\Omega$ be a subset of a vector space over the reals, and $f$ an extended real-valued function defined on $\Omega$.  The \emph{epigraph} of $f$, denoted by $\operatorname{epi}(f)$, is the set 
+$$\lbrace (x,r)\mid x\in \Omega,\mbox{ } r\ge f(x)\rbrace.$$
+An extended real-valued function $f$ defined on a subset $\Omega$ of a vector space $V$ over the reals is said to be \emph{convex} if its \emph{epigraph} is a convex subset of $V\times\mathbb{R}$.  With this definition, the domain $\Omega$ of $f$ need not be convex.  However, its subset $\lbrace x\in \Omega\mid f(x) < \infty\rbrace$, called the \emph{effective domain} and denoted by $\operatorname{eff.dom}(f)$, is convex.  To see this, suppose $x,y\in \operatorname{eff.dom}(f)$ and $z=\lambda x+(1-\lambda) y$ with $0\le \lambda \le 0$.  Then $ (z,\overline{z})=\lambda(x,f(x))+(1-\lambda)(y,f(y))\in \operatorname{epi}(f)$, where $\overline{z}=\lambda f(x)+(1-\lambda)f(y)$, since $\operatorname{epi}(f)$ is convex by definition.  Therefore, $z\in \operatorname{dom}(f)$.  In fact, $f(z)\le \overline{z}=\lambda f(x)+(1-\lambda)f(y)<\infty$, which implies that $z\in \operatorname{eff.dom}(f)$.
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+\end{document}

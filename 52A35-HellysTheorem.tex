@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HellysTheorem}
+\pmcreated{2013-03-22 13:57:38}
+\pmmodified{2013-03-22 13:57:38}
+\pmowner{bbukh}{348}
+\pmmodifier{bbukh}{348}
+\pmtitle{Helly's theorem}
+\pmrecord{6}{34728}
+\pmprivacy{1}
+\pmauthor{bbukh}{348}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52A35}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{amsthm}
+\DeclareMathOperator{\conv}{conv}
+
+\makeatletter
+\@ifundefined{bibname}{}{\renewcommand{\bibname}{References}}
+\makeatother
+\begin{document}
+Suppose $A_1,\dotsc,A_m\subset \mathbb{R}^d$ is a family of convex sets, and every $d+1$ of them have a non-empty intersection. Then $\bigcap_{i=1}^m A_i$ is non-empty.
+\begin{proof}
+The proof is by induction on $m$. If $m=d+1$, then the statement is vacuous. Suppose the statement is true if $m$ is replaced by $m-1$. The sets $B_j=\bigcap_{i\neq j} A_i$ are non-empty by inductive hypothesis. Pick a point $p_j$ from each of $B_j$. By Radon's lemma, there is a partition of $p$'s into two sets $P_1$ and $P_2$ such that $I=(\conv P_1)\cap(\conv P_2)\neq \emptyset$. For every $A_j$ either every point in $P_1$ belongs to $A_j$ or every point in $P_2$ belongs to $A_j$. Hence $I\subseteq A_j$ for every $j$.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

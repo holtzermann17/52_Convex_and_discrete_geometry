@@ -1,0 +1,126 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Polytope}
+\pmcreated{2013-03-22 14:07:59}
+\pmmodified{2013-03-22 14:07:59}
+\pmowner{mps}{409}
+\pmmodifier{mps}{409}
+\pmtitle{polytope}
+\pmrecord{26}{35544}
+\pmprivacy{1}
+\pmauthor{mps}{409}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52B40}
+%\pmkeywords{polytope}
+%\pmkeywords{face lattice}
+%\pmkeywords{graded poset}
+\pmrelated{Polyhedron}
+\pmrelated{PoincareFormula}
+\pmrelated{EulersPolyhedronTheorem}
+\pmdefines{V-polytope}
+\pmdefines{H-polytope}
+\pmdefines{d-polytope}
+\pmdefines{dimension}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+A \emph{polytope} is the convex hull of finitely many points in
+Euclidean space.  A polytope constructed in this way is the convex
+hull of its vertices and is called a \emph{$\mathcal{V}$-polytope}.
+An \emph{$\mathcal{H}$-polytope} is a bounded intersection of
+upper halfspaces.  By the Weyl--Minkowski theorem, these descriptions are
+equivalent, that is, every $\mathcal{V}$-polytope is an
+$\mathcal{H}$-polytope, and vice versa.  This shows that our
+intuition, based on the study of low-dimensional polytopes, that one
+can describe a polytope either by its vertices or by its facets is
+essentially correct.
+
+The \emph{dimension} of $P$ is the smallest $d$ such that $P$ can be
+embedded in $\mathbb{R}^d$.  A $d$-dimensional polytope is also called
+a \emph{$d$-polytope}.
+
+A face of a polytope is the intersection of the polytope with a
+supporting hyperplane.  Intuitively, a supporting hyperplane is a
+hyperplane that ``just touches'' the polytope, as though the polytope
+were just about to pass through the hyperplane.  Note that this
+intuitive picture does not cover the case of the empty face, where the
+supporting hyperplane does not touch the polytope at all, or the fact
+that a polytope is a face of itself.  The faces of a polytope, when 
+partially ordered by set inclusion, form a geometric lattice, called 
+the face lattice of the polytope.
+
+The Euler polyhedron formula, which states that if a $3$-polytope has
+$V$ vertices, $E$ edges, and $F$ faces, then
+\[
+V - E + F = 2,
+\]
+has a generalization to all $d$-polytopes.  Let $(f_{-1}=1, f_0,
+\dots, f_{d-1}, f_d = 1)$ be the f-vector of a $d$-polytope $P$, so
+$f_i$ is the number of $i$-dimensional faces of $P$.  Then these numbers
+satsify the Euler--Poincar\'e--Schl\"afli formula:
+\begin{equation}
+\sum_{i=-1}^d (-1)^i f_i = 0.
+\end{equation}
+This is the first of many relations among entries of the f-vector
+satisfied by all polytopes.  These relations are called the
+\emph{Dehn--Sommerville relations}.  Any poset which satisfies these
+relations is \PMlinkname{Eulerian}{EulerianPoset},
+so the face lattice of any polytope is Eulerian.
+
+\begin{thebibliography}{3}
+\bibitem{cite:BB}
+Bayer, M. and L. Billera, \emph{Generalized Dehn--Sommerville relations for
+polytopes, spheres and Eulerian partially ordered sets}, Invent. Math. 79
+(1985), no. 1, 143--157.
+\bibitem{cite:BK}
+Bayer, M. and A. Klapper, \emph{A new index for polytopes}, Discrete Comput.
+Geom. 6
+(1991), no. 1, 33--47.
+\bibitem{cite:M}
+Minkowski, H.  \emph{Allgemeine Lehrs\"atze \"uber die konvexe Polyeder}, Nachr.~Ges.~Wiss., G\"ottingen, 1897, 198--219.
+\bibitem{cite:W}
+Weyl, H.  \emph{Elementare Theorie der konvexen Polyeder}, Comment.~Math.~Helvetici, 1935, 7
+\bibitem{cite:Z}
+Ziegler, G., \emph{Lectures on polytopes}, Springer-Verlag, 1997.
+\end{thebibliography}
+
+\PMlinkescapeword{satisfy}
+\PMlinkescapeword{inclusion}
+\PMlinkescapeword{collection}
+\PMlinkescapeword{dimension}
+\PMlinkescapeword{dimensions}
+\PMlinkescapeword{spheres}
+\PMlinkescapeword{index}
+\PMlinkescapeword{relation}
+\PMlinkescapeword{relations}
+\PMlinkescapeword{identities}
+\PMlinkescapeword{meet}
+\PMlinkescapeword{meets}
+\PMlinkescapeword{join}
+\PMlinkescapeword{lattice}
+\PMlinkescapeword{extension}
+\PMlinkescapeword{formula}
+%%%%%
+%%%%%
+\end{document}

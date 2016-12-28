@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IntersectionSemilatticeOfASubspaceArrangement}
+\pmcreated{2013-03-22 15:47:58}
+\pmmodified{2013-03-22 15:47:58}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{intersection semilattice of a subspace arrangement}
+\pmrecord{8}{37761}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52B99}
+\pmclassification{msc}{52C35}
+\pmsynonym{intersection lattice}{IntersectionSemilatticeOfASubspaceArrangement}
+\pmsynonym{intersection semilattice}{IntersectionSemilatticeOfASubspaceArrangement}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\DeclareMathOperator{\Span}{span}
+\theoremstyle{definition}
+\newtheorem*{example*}{Example}
+\begin{document}
+\PMlinkescapeword{dimension}
+\PMlinkescapeword{structure}
+Let $\mathcal{A}$ be a finite subspace arrangement in a 
+finite-dimensional vector space $V$.
+The {\em \PMlinkescapetext{intersection semilattice}} of 
+$\mathcal{A}$ is the subspace
+arrangement $L(\mathcal{A})$ defined by taking the 
+\PMlinkname{closure}{ClosureAxioms} 
+of $\mathcal{A}$ under intersections.  More formally, let
+\[
+L(\mathcal{A}) = \bigl\{ \bigcap_{H\in\mathcal{S}} H
+                 \mid    \mathcal{S}\subset\mathcal{A}
+                 \bigr\}.
+\]
+\PMlinkname{Order}{Poset} the elements of $L(\mathcal{A})$ 
+by reverse inclusion,
+and give it the structure of a join-semilattice by defining
+$H\vee K=H\cap K$ for all $H$, $K$ in $L(\mathcal{A})$.
+Moreover, the elements of $L(\mathcal{A})$ are naturally 
+graded by codimension.  If $\mathcal{A}$
+happens to be a central arrangement, its intersection
+semilattice is in fact a lattice, with the meet operation
+defined by $H\wedge K=\Span(H\cup K)$, where 
+$\Span(H\cup K)$ is the subspace of $V$ spanned by 
+$H\cup K$.
+
+% This will need a figure, which I will add soon.
+%\begin{example*}
+%Let $V=\mathbb{R}^4$ and let $\mathcal{A}=\{x_i=x_j\mid 1\le i<j\le 4\}$.
+%Elements of the intersection lattice $L(\mathcal{A})$ of codimensio
+%\end{example*}
+%%%%%
+%%%%%
+\end{document}

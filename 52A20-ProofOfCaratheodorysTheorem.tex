@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProofOfCaratheodorysTheorem}
+\pmcreated{2013-03-22 17:50:08}
+\pmmodified{2013-03-22 17:50:08}
+\pmowner{kshum}{5987}
+\pmmodifier{kshum}{5987}
+\pmtitle{proof of Carath\'eodory's theorem}
+\pmrecord{4}{40306}
+\pmprivacy{1}
+\pmauthor{kshum}{5987}
+\pmtype{Proof}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52A20}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The convex hull of $P$ consists precisely of the points that can be written as convex combination of finitely many number points in $P$. Suppose that $p$ is a convex combination of $n$ points in $P$, for some integer $n$,
+\[
+p = \alpha_1x_1 + \alpha_2 x_2 + \ldots + \alpha_n x_n
+\]
+where $\alpha_1+\ldots +\alpha_n = 1$ and $x_1, \ldots, x_n \in P$. If $n \leq d+1$, then it is already in the required form.
+
+If $n > d+1$, the $n-1$ points $x_2-x_1$, $x_3-x_1, \ldots, x_n-x_1$ are linearly dependent. Let $\beta_i$, $i=2,3,\ldots, n$, be real numbers, which are not all zero, such that
+\[
+ \sum_{i=2}^n \beta_i (x_i-x_1) = 0.
+\]
+So, there are $n$ constants $\gamma_1, \ldots \gamma_n$, not all equal to zero, such that \[\sum_{i=1}^n \gamma_i x_i = 0,\]
+and
+\[
+ \sum_{i=1}^n \gamma_i = 0.
+\]
+
+Let $\mathcal{I}$ be a subset of indices defined as
+\[\{i\in\{1,2,\ldots, n\}:\, \gamma_i > 0\}.
+\]
+Since $ \sum_{i=1}^n \gamma_i = 0$, the subset $\mathcal{I}$ is not empty. Define
+\[
+ a = \max_{i\in I} \alpha_i/\gamma_i.
+\]
+Then we have
+\[
+ p = \sum_{i=1}^n (\alpha_i - a\gamma_i) x_i, 
+\]
+which is a convex combination with at least one zero coefficient. Therefore, we can assume that $p$ can be written as a convex combination of $n-1$ points in $P$, whenever $n > d+1$.
+
+After repeating the above process several times, we can express $p$ as a convex combination of at most $d+1$ points in $P$.
+%%%%%
+%%%%%
+\end{document}

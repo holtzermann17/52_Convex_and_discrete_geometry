@@ -1,0 +1,118 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HyperplaneArrangement}
+\pmcreated{2013-03-22 15:47:55}
+\pmmodified{2013-03-22 15:47:55}
+\pmowner{mps}{409}
+\pmmodifier{mps}{409}
+\pmtitle{hyperplane arrangement}
+\pmrecord{6}{37760}
+\pmprivacy{1}
+\pmauthor{mps}{409}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52B99}
+\pmclassification{msc}{52C35}
+\pmsynonym{subspace arrangement}{HyperplaneArrangement}
+\pmsynonym{central arrangement}{HyperplaneArrangement}
+%\pmkeywords{arrangement}
+%\pmkeywords{partition}
+%\pmkeywords{fundamental group}
+\pmrelated{Zonotope}
+\pmdefines{Grassmannian}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\theoremstyle{plain}
+\newtheorem{example}{Example}
+\DeclareMathOperator{\Gr}{Gr}
+\begin{document}
+\PMlinkescapeword{between}
+\PMlinkescapeword{dimension}
+\PMlinkescapeword{equivalent}
+Let $V$ be a vector space over a field $\mathbb{K}$.  A 
+{\em hyperplane arrangment} in $V$ is a family
+$\mathcal{A}=\{\mathcal{H}_i\}_{i\in I}$
+of affine hyperplanes in $V$.  If all of the hyperplanes
+pass through $0$, $\mathcal{A}$ is called {\em central};
+otherwise, it is {\em affine}.  More generally, a 
+{\em subspace arrangement} is a family of affine subspaces of $V$. 
+The same distinction between central and affine subspace arrangement
+holds.
+
+\begin{example}
+Let $V=\mathbb{K}^n$.  Then the family
+\[
+\mathbb{K}P^n=\{S\subset V\mid\dim_{\mathbb{K}}(S)=1\}
+\]
+of $1$-dimensional subspaces of $V$ is a central subspace
+arrangement, the projective space of dimension $n$ over 
+$\mathbb{K}$.
+\end{example}
+
+Instead of considering all lines through a vector space, 
+we could consider all $k$-dimensional subspaces
+of the space.
+
+\begin{example}
+Again let $V=\mathbb{K}^n$, and suppose $0\le k\le n$.  Then the
+family
+\[
+\Gr(V,k)=\{S\subset V\mid\dim_{\mathbb{K}}(S)=k\}
+\]
+of $k$-dimensional subspaces of $V$ is a central subspace
+arrangement, the Grassmannian.  Observe that 
+$\mathbb{K}P^n=\Gr(\mathbb{K}^n,1)$.
+\end{example}
+
+If $V$ is a topological vector space and $\mathcal{A}$ is a
+hyperplane arrangement, then it makes sense to ask for the
+fundamental group of the complement 
+$V\setminus\bigcup_{\mathcal{H}\in\mathcal{A}}\mathcal{H}$.
+
+\begin{example}
+If $\mathcal{A}$ is a finite hyperplane arrangement over
+$V=\mathcal{R}^n$, then the arrangement 
+\PMlinkname{partitions}{Partition} $V$
+into a finite number of contractible cells.  By selecting
+a point in each cell and taking the convex hull of the result,
+we obtain a polytope combinatorially equivalent to the 
+zonotope dual to the arrangement.  Since the question of
+the fundamental group here is not interesting, we could also
+use the embedding $\mathbb{R}^n\hookrightarrow\mathbb{C}^n$
+to complexify $\mathcal{A}$.  In this case the
+complement 
+$\mathbb{C}^n\setminus\bigcup_{\mathcal{H}\in\mathcal{A}}\mathcal{H}$
+usually has nontrivial fundamental group.
+\end{example}
+
+\begin{thebibliography}{9}
+\bibitem{KR}
+Klain, D.\ A., and G.-C.\ Rota, {\em, Introduction to geometric probability},
+Cambridge University Press, 1997.
+\bibitem{OT}
+Orlik, P., and H.\ Terao, {\em Arrangements of hyperplanes}, 
+Springer-Verlag, 1992.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

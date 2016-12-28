@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ConvexFunctionsLieAboveTheirSupportingLines}
+\pmcreated{2013-03-22 16:59:20}
+\pmmodified{2013-03-22 16:59:20}
+\pmowner{Andrea Ambrosio}{7332}
+\pmmodifier{Andrea Ambrosio}{7332}
+\pmtitle{convex functions lie above their supporting lines}
+\pmrecord{5}{39268}
+\pmprivacy{1}
+\pmauthor{Andrea Ambrosio}{7332}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52A41}
+\pmclassification{msc}{26A51}
+\pmclassification{msc}{26B25}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $f:\mathbf{R}\rightarrow \mathbf{R}$ be a convex, twice differentiable
+function on $[a,b]$. Then $f(x)$ lies above its supporting lines, i.e. it's
+greater than any tangent line in $[a,b]$.
+
+\begin{proof}:
+
+Let $r(x)=f\left( x_{0}\right) +f^{\prime }\left( x_{0}\right) \left(
+x-x_{0}\right) $ be the tangent of $f(x)$ in $x=x_{0}\in \lbrack a,b].$
+
+By Taylor theorem, with remainder in Lagrange form, one has, for any $x\in
+\lbrack a,b]$:
+\[
+f\left( x\right) =f\left( x_{0}\right) +f^{\prime }\left( x_{0}\right)
+\left( x-x_{0}\right) +\frac{1}{2}f^{^{\prime \prime }}\left( \xi \left(
+x\right) \right) \left( x-x_{0}\right) ^{2}
+\]
+with $\xi \left( x\right) \in \lbrack a,b]$. Then
+\[
+f\left( x\right) -r(x)=\frac{1}{2}f^{^{\prime \prime }}\left( \xi \left(
+x\right) \right) \left( x-x_{0}\right) ^{2}\geq 0
+\]
+since $f^{^{\prime \prime }}\left( \xi \left( x\right) \right) \geq 0$ by
+convexity.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

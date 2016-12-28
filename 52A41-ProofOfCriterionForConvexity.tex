@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProofOfCriterionForConvexity}
+\pmcreated{2013-03-22 17:00:23}
+\pmmodified{2013-03-22 17:00:23}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{proof of criterion for convexity}
+\pmrecord{5}{39288}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Proof}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52A41}
+\pmclassification{msc}{26A51}
+\pmclassification{msc}{26B25}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem{thm}{Theorem}
+\begin{document}
+\begin{thm}
+Suppose $f \colon (a,b) \to \mathbb{R}$ is continuous and that,
+for all $x,y \in (a,b)$,
+\[
+f \left( {x + y \over 2} \right) \le {f(x) + f(y) \over 2} .
+\]
+Then $f$ is convex.
+\end{thm}
+
+\begin{proof}
+We begin by showing that, for any natural numbers $n$ and $m \le 2^n$,
+\[
+f \left( {m x + (2^n - m) y \over 2^n} \right) \le 
+{m f(x) + (2^n - m) f(y) \over 2^n} 
+\]
+by induction.  When $n=1$, there are three possibilities: $m=1$, $m=0$,
+and $m=2$.  The first possibility is a hypothesis of the theorem being
+proven and the other two possibilities are trivial.
+
+Assume that
+\[
+f \left( {m' x + (2^n - m') y \over 2^n} \right) \le 
+{m' f(x) + (2^n - m') f(y) \over 2^n} 
+\]
+for some $n$ and all $m' \le 2^n$.  Let $m$ be a number less than or equal
+to $2^{n+1}$.  Then either $m \le 2^n$ or $2^{n+1} - m \le 2^n$.  In the
+former case we have
+\begin{align*}
+f \left( {1 \over 2} {m x + (2^n - m) y \over 2^n} + 
+{y \over 2} \right) &\le 
+{1 \over 2} \left( f \left( {m x + (2^n - m) y \over 2^n} \right) +
+f(y) \right) \\ &\le
+{1 \over 2} {m f(x) + (2^n - m) f(y) \over 2^n} +
+{f(y) \over 2} \\ &=
+{m f(x) + (2^{n+1} - m) f(y) \over 2^{n+1}} .
+\end{align*}
+In the other case, we can reverse the roles of $x$ and $y$.
+
+Now, every real number $s$ has a binary expansion; in other words, there
+exists a sequence $\{m_n\}$ of integers such that $\lim_{n \to \infty} 
+m_n / 2^n = s$.  If $0 \le s \le 1$, then we also have $0 \le m_n \le 2^n$
+so, by what we proved above,
+\[
+f \left( {m_n x + (2^n - m_n) y \over 2^n} \right) \le 
+{m_n f(x) + (2^n - m_n) f(y) \over 2^n} .
+\]
+Since $f$ is assumed to be continuous, we may take the limit of both
+sides and conclude
+\[
+f( s x + (1 - s) y ) \le s f (x) + (1 - s) f (y) ,
+\]
+which implies that $f$ is convex.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

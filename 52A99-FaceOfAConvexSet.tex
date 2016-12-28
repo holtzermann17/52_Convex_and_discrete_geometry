@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FaceOfAConvexSet}
+\pmcreated{2013-03-22 16:23:08}
+\pmmodified{2013-03-22 16:23:08}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{face of a convex set}
+\pmrecord{12}{38530}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52A99}
+\pmrelated{ExtremePoint}
+\pmdefines{face}
+\pmdefines{proper face}
+\pmdefines{extreme point}
+\pmdefines{improper face}
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+
+\begin{document}
+Let $C$ be a convex set in $\mathbb{R}^n$ (or any topological vector
+space).  A \emph{face} of $C$ is a subset $F$ of $C$ such that
+\begin{enumerate}
+\item $F$ is convex, and 
+\item given any line segment $L\subseteq C$, if
+$\operatorname{ri}(L)\cap F\ne \varnothing$, then $L\subseteq F$.
+\end{enumerate}
+Here, $\operatorname{ri}(L)$ denotes the relative interior of $L$
+(open segment of $L$).
+
+A zero-dimensional face of a convex set $C$ is called an \emph{extreme
+point} of $C$.
+
+This definition formalizes the notion of a face of a convex polygon or
+a convex polytope and generalizes it to an arbitrary convex set.  For
+example, any point on the boundary of a closed unit disk in
+$\mathbb{R}^2$ is its face (and an extreme point).
+
+Observe that the empty set and $C$ itself are faces of $C$.  These
+faces are sometimes called \emph{improper faces}, while other faces
+are called \emph{proper faces}.
+
+\textbf{Remarks}.
+Let $C$ be a convex set.
+\begin{itemize}
+\item The intersection of two faces of $C$ is a face of $C$.
+\item A face of a face of $C$ is a face of $C$.
+\item Any proper face of $C$ lies on its relative boundary,
+$\operatorname{rbd}(C)$.
+\item The set $\operatorname{Part}(C)$ of all relative interiors of the faces of $C$ partitions $C$.
+\item If $C$ is compact, then $C$ is the convex hull of its extreme points.
+\item The set $F(C)$ of faces of a convex set $C$ forms a lattice, where the meet is the intersection: $F_1 \wedge F_2 := F_1\cap F_2$; the join of $F_1,F_2$ is the smallest face $F\in F(C)$ containing both $F_1$ and $F_2$.  This lattice is bounded lattice (by $\varnothing$ and $C$).  And it is not hard to see that $F(C)$ is a complete lattice.
+\item
+However, in general, $F(C)$ is not a modular lattice.  As a counterexample, consider the unit square $[0,1]\times [0,1]$ and faces $a=(0,0)$, $b=\lbrace (0,y)\mid y\in [0,1]\rbrace$, and $c=(1,1)$.  We have $a\le b$.  However, $a\vee (b\wedge c)=(0,0)\vee \varnothing=(0,0)$, whereas $(a\vee b)\wedge c = b\wedge \varnothing=\varnothing$.
+\item Nevertheless, $F(C)$ is a complemented lattice.  Pick any face $F\in F(C)$.  If $F=C$, then $\varnothing$ is a complement of $F$.  Otherwise, form $\operatorname{Part}(C)$ and $\operatorname{Part}(F)$, the partitions of $C$ and $F$ into disjoint unions of the relative interiors of their corresponding faces.  Clearly $\operatorname{Part}(F)\subset \operatorname{Part}(C)$ strictly.  Now, it is possible to find an extreme point $p$ such that $\lbrace p\rbrace\in \operatorname{Part}(C)-\operatorname{Part}(F)$.  Otherwise, all extreme points lie in $\operatorname{Part}(F)$, which leads to 
+$$\operatorname{Part}(F) = \operatorname{Part}(\mbox{convex hull of extreme points of }C)=\operatorname{Part}(C),$$ a contradiction.  Finally, let $G$ be the convex hull of extreme points of $C$ not contained in $\operatorname{Part}(F)$.  We assert that $G$ is a complement of $F$.  If $x\in G\cap F$, then $G\cap F$ is a proper face of $G$ and of $F$, hence its extreme points are also extreme points of $G$, and of $F$, which is impossible by the construction of $G$.  Therefore $F\cap G=\varnothing$.  Next, note that the union of extreme points of $G$ and of $F$ is the collection of all extreme points of $C$, this is again the result of the construction of $G$, so any $y\in C$ is in the join of all its extreme points, which is equal to the join of $F$ and $G$ (since join is universally associative).
+\item 
+Additionally, in $F(C)$, zero-dimensional faces are compact elements, and compact elements are faces with finitely many extreme points.  The unit disk $D$ is not compact in $F(D)$.  Since every face is the convex hull (join) of all extreme points it contains, $F(C)$ is an algebraic lattice.
+\end{itemize}
+
+\begin{thebibliography}{9}
+\bibitem{Rockafellar} R.T. Rockafellar, \emph{Convex Analysis}, Princeton University Press, 1996.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

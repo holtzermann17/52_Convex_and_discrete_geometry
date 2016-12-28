@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{WulffTheorem}
+\pmcreated{2013-03-22 15:19:50}
+\pmmodified{2013-03-22 15:19:50}
+\pmowner{paolini}{1187}
+\pmmodifier{paolini}{1187}
+\pmtitle{Wulff theorem}
+\pmrecord{8}{37144}
+\pmprivacy{1}
+\pmauthor{paolini}{1187}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52A21}
+%\pmkeywords{isoperimetric}
+%\pmkeywords{Frank}
+%\pmkeywords{Wulff}
+%\pmkeywords{Finsler}
+%\pmkeywords{anisotropic}
+\pmrelated{FinslerGeometry}
+\pmdefines{Wulff shape}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\R}{\mathbb R}
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+\theoremstyle{remark}
+\newtheorem{example}{Example}
+\begin{document}
+\begin{definition}[Wulff shape]
+Let $\phi\colon\R^n \to [0,+\infty)$ be a non-negative, convex, coercive, positively $1$-homogeneous function. We define the \emph{Wulff shape} relative to $\phi$ as the set
+\[
+  W_\phi := \{ x \in \R^n \colon \text{$\langle x,y\rangle \le 1$ for all $y$ such that $\phi(y)\le 1$}\} 
+\]
+(where $\langle \cdot,\cdot\rangle$ is the Euclidean inner product in $\R^n$.)
+\end{definition}
+
+\begin{theorem}[Wulff]
+Let $\phi\colon\R^n \to [0,+\infty)$ be a non-negative, convex, coercive, $1$-homogeneous function. Given a regular open set $D\subset\R^n$ we consider the following anisotropic surface energy:
+\[
+  F_\phi(D) = \int_{\partial D} \phi(\nu_D(x))\, d\sigma(x)
+\]
+where $\nu_D(x)$ is the outer unit normal to $\partial D$, and $\sigma$ is the surface area on $\partial D$.
+Then, given any set $D$ with the same volume as $W_\phi$, i.e.\ $|D|=|W_\phi|$, one has $F_\phi(D)\ge F_\phi(W_\phi)$.
+Moreover if $|D|=|W_\phi|$ and $F_\phi(D)=F_\phi(W_\phi)$ then $D$ is a translation of $W_\phi$ i.e.\ there exists $v\in R^n$ such that $D=v+W_\phi$.
+\end{theorem}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{StarshapedRegion}
+\pmcreated{2013-03-22 13:34:13}
+\pmmodified{2013-03-22 13:34:13}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{star-shaped region}
+\pmrecord{10}{34182}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52A30}
+\pmclassification{msc}{32F99}
+\pmdefines{star-shaped}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+\begin{document}
+{\bf Definition}
+A subset $U$ of a real (or possibly complex) vector space is called 
+\emph{star-shaped} if there is a point $p\in U$ such that the line segment
+$\overline{pq}$ is contained in $U$ for all $q\in U$. (Here, $\overline{pq} = \{ tp + (1-t)q\, | \, t\in[0,1] \}$.)  We then say that $U$ is star-shaped with respect to $p$.
+
+In other \PMlinkescapetext{words}, a region $U$ is star-shaped if there is a point $p\in U$ such that $U$ can be ``collapsed'' or ``contracted'' \PMlinkescapetext{onto} $p$.
+
+\subsubsection{Examples}
+\begin{enumerate}
+\item In $\sR^n$, any vector subspace is star-shaped. Also, the unit cube and 
+unit ball are star-shaped, but the unit sphere is not. 
+\item A subset $U$ of a vector space is star-shaped with respect to all of its points if and only if $U$ is convex. 
+\end{enumerate}
+%%%%%
+%%%%%
+\end{document}

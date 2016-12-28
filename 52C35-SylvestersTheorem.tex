@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SylvestersTheorem}
+\pmcreated{2013-03-22 13:59:36}
+\pmmodified{2013-03-22 13:59:36}
+\pmowner{bbukh}{348}
+\pmmodifier{bbukh}{348}
+\pmtitle{Sylvester's theorem}
+\pmrecord{5}{34770}
+\pmprivacy{1}
+\pmauthor{bbukh}{348}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52C35}
+\pmclassification{msc}{51M04}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+\makeatletter
+\@ifundefined{bibname}{}{\renewcommand{\bibname}{References}}
+\makeatother
+\begin{document}
+For every finite collection of non-collinear points in Euclidean space, there is a line that passes through exactly two of them.
+
+\begin{proof}
+Consider all lines passing through two or more points in the collection.
+Since not all points lie on the same line, among pairs of points and lines that are non-incident we can find a point $A$ and a line $l$ such that the distance $d(A,l)$ between them is minimal. Suppose the line $l$ contained more than two points. Then at least two of them, say $B$ and $C$, would lie on the same side of the perpendicular from $p$ to $l$. But then either $d(AB,C)$ or $d(AC,B)$ would be smaller than the distance $d(A,l)$ which contradicts the minimality of $d(A,l)$.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

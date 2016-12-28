@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{KdistanceSet}
+\pmcreated{2013-03-22 14:19:17}
+\pmmodified{2013-03-22 14:19:17}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{K-distance set}
+\pmrecord{6}{35788}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52C35}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $X$ be a set with metric $d$, $Y\subseteq X$, and $L=\{d(x,y):x,y\in Y,x\ne y\}$. If $K:=\#(L)$ is finite, $Y$ is said to be a {\em $K$-distance set}.
+
+$Y$ is called a {\em maximal $K$-distance set} if and only if for all $x\in X\setminus Y$, there exists $y\in Y$ such that $d(x,y)\notin L$. That is, if anything is added to $Y$, it is no longer a $K$-distance set.
+
+$Y$ is called a {\em spherical $K$-distance set} if and only if $Y$ is a $K$-distance set and every element of $Y$ is a fixed distance $r$ from some element $c$, so $Y$ is a subset of the \PMlinkname{sphere}{SphereMetricSpace} centered at $c$ with radius $r$.
+
+For example, let $X=\mathbb{R}^2$ with $d=$ the box metric: $d(x,y)=\max\{|x_1-y_1|,|x_2-y_2|\}$ with $x_i,y_i$ components of $x,y$, respectively. Let $Y=\{(0,0),(1,0),(2,0),(0,1),(1,1),(2,1),(0,2),(1,2),(2,2)\}$. Then $L=\{1,2\}$, so $K=2$, so $Y$ is a 2-distance set.
+
+
+Note: please do not confuse this definition of $K$-distance set with $\Delta_K(Y)$, the $K$-distance set of $Y$.
+%%%%%
+%%%%%
+\end{document}

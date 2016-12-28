@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IfAIsConvexAndFLinearThenFAAndF1AAreConvex}
+\pmcreated{2013-03-22 14:36:18}
+\pmmodified{2013-03-22 14:36:18}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{if $A$ is convex and $f$ linear then $f(A)$ and $f^{-1}(A)$ are convex}
+\pmrecord{8}{36175}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52A99}
+\pmrelated{InverseImage}
+\pmrelated{DirectImage}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\begin{prop}
+Suppose $X$, $Y$ are vector spaces over $\sR$ (or $\sC$),
+    and suppose $f\colon X\to Y$ is a linear map.
+\begin{enumerate}
+\item  If $A\subseteq X$ is convex, then $f(A)$ is convex.
+\item  If $B\subseteq Y$ is convex, then $f^{-1}(B)$ is convex,
+where $f^{-1}$ is the inverse image. 
+\end{enumerate}
+\end{prop}
+
+\begin{proof} For the first claim, 
+suppose $y,y'\in f(A)$, say,
+$y=f(x)$ and $y'=f(x')$ for $x,x'\in A$, and suppose $\lambda\in (0,1)$.
+Then 
+\begin{eqnarray*}
+  \lambda y + (1-\lambda)y' &=& \lambda f(x) + (1-\lambda ) f(x') \\
+    &=& f( \lambda x + (1-\lambda) x'),
+\end{eqnarray*}
+so  $\lambda y + (1-\lambda)y' \in f(A)$ as $A$ is convex.
+
+For the second claim, let us first recall that $x\in f^{-1}(B)$
+if and only if $f(x)\in B$. Then, if $x,x'\in f^{-1}(B)$, 
+and $\lambda\in (0,1)$, we have
+\begin{eqnarray*}
+f(\lambda x + (1-\lambda)x') &=& \lambda f(x) + (1-\lambda ) f(x').
+\end{eqnarray*}
+As $B$ is convex, the right hand side belongs to $B$, 
+and $\lambda x + (1-\lambda)x' \in f^{-1}(B)$. 
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

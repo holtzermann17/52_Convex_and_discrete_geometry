@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RadonsLemma}
+\pmcreated{2013-03-22 13:56:48}
+\pmmodified{2013-03-22 13:56:48}
+\pmowner{bbukh}{348}
+\pmmodifier{bbukh}{348}
+\pmtitle{Radon's lemma}
+\pmrecord{8}{34710}
+\pmprivacy{1}
+\pmauthor{bbukh}{348}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52A20}
+\pmclassification{msc}{52C07}
+%\pmkeywords{convex hull}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+%%%\usepackage{xypic}
+
+\makeatletter
+\@ifundefined{bibname}{}{\renewcommand{\bibname}{References}}
+\makeatother
+\begin{document}
+Every set $A\subset \mathbb{R}^d$ of $d+2$ or more points can be partitioned into two disjoint sets $A_1$ and $A_2$ such that the convex hulls of $A_1$ and $A_2$ intersect.
+
+\begin{proof}
+Without loss of generality we assume that the set $A$ consists of exactly $d+2$ points which we number $a_1, a_2,\dotsc, a_{d+2}$. Denote by $a_{i,j}$ the $j$'th component of $i$'th vector, and write the components in a matrix as
+\begin{equation*}
+M=\begin{bmatrix}
+a_{1,1}&a_{2,1}&\dots&a_{d+2,1}\\
+a_{1,2}&a_{2,2}&\dots&a_{d+2,2}\\
+\vdots& \vdots&\ddots & \vdots\\
+a_{1,d}&a_{2,d}&\dots&a_{d+2,d}\\
+1&1&\dots&1
+\end{bmatrix}.
+\end{equation*}
+Since $M$ has fewer rows than columns, there is a non-zero column vector $\mathbf{\lambda}$ such that $M \mathbf{\lambda}=0$, which is equivalent to the existence of a solution to the system
+%aligned inside equation with a tag does not work with LaTeX2HTML
+\begin{align}\label{eqn:sys}
+0&=\lambda_1 a_1+\lambda_2 a_2+\dotsb+\lambda_{d+2} a_{d+2}\\
+0&=\lambda_1+\lambda_2+\dotsb+\lambda_{d+2}\notag
+\end{align}
+Let $A_1$ be the set of those $a_i$ for which $\lambda_i$ is positive, and $A_2$ be the rest. Set $s$ to be the sum of positive $\lambda_i$'s. Then by the system~\eqref{eqn:sys} above 
+\begin{equation*}
+\frac{1}{s}\sum_{a_i\in A_1} \lambda_i a_i=\frac{1}{s}\sum_{a_i\in A_2} (-\lambda_i) a_i
+\end{equation*}
+is a point of intersection of convex hulls of $A_1$ and $A_2$.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

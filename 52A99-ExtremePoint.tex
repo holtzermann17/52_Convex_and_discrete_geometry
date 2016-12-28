@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExtremePoint}
+\pmcreated{2013-03-22 14:24:55}
+\pmmodified{2013-03-22 14:24:55}
+\pmowner{jirka}{4157}
+\pmmodifier{jirka}{4157}
+\pmtitle{extreme point}
+\pmrecord{7}{35920}
+\pmprivacy{1}
+\pmauthor{jirka}{4157}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52A99}
+\pmrelated{FaceOfAConvexSet}
+\pmrelated{ExposedPointsAreDenseInTheExtremePoints}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\theoremstyle{theorem}
+\newtheorem*{thm}{Theorem}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{conj}{Conjecture}
+\newtheorem*{cor}{Corollary}
+\newtheorem*{example}{Example}
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+\begin{document}
+\begin{defn}
+Let $C$ be a convex subset of a vector space $X$.  A point $x \in C$ is
+called an {\em extreme point} if it is not an interior point of any line segment
+in $C$.  That is $x$ is extreme if and only if whenever $x = ty +(1-t)z$, $t \in (0,1)$, $z \not= y$, implies either $y \notin C$ or $z \notin C$.
+\end{defn}
+
+For example the set $[0,1] \in {\mathbb{R}}$ is a convex set and $0$ and $1$ are the extreme points.
+
+\begin{thebibliography}{9}
+\bibitem{royden}
+H.\@ L.\@ Royden. \emph{\PMlinkescapetext{Real Analysis}}. Prentice-Hall, Englewood Cliffs, New Jersey, 1988
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProofOfCriterionForConvexityII}
+\pmcreated{2013-03-22 18:25:25}
+\pmmodified{2013-03-22 18:25:25}
+\pmowner{yesitis}{13730}
+\pmmodifier{yesitis}{13730}
+\pmtitle{proof of criterion for convexity II}
+\pmrecord{5}{41077}
+\pmprivacy{1}
+\pmauthor{yesitis}{13730}
+\pmtype{Proof}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52A41}
+\pmclassification{msc}{26A51}
+\pmclassification{msc}{26B25}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+If $f$ was not convex, then there was a point $\xi\in(a, b)$ such
+that $f(\xi)>h(x)=\frac{f(v)-f(u)}{v-u}(x-u)+f(u)$ for some $u<v$ in
+$(a,b)$. Since $f$ is continuous, there would be a neighborhood
+$(\xi-\delta, \xi+\delta), \delta>0$, of $\xi$ such that $f(x)>h(x)$
+for all $x$ in this neighborhood. (I.e., $f(x)$ was ``above" the
+line segment joining $f(u)$ and $f(v)$.) Let $s=\xi-\delta,
+t=\xi+\delta$.
+
+Using the two points $A=(s, f(s)), B=(t, f(t))$, we construct
+another line segment $\overline{AB}$ whose equation is given by
+$g(x)=\frac{f(s)-f(t)}{2\delta}(x-s)+f(s)$; we have $f(x)>g(x)$ for
+$x\in(s, t)$. In particular,
+\begin{equation}
+\displaystyle
+f(\xi)=f\left(\frac{s+t}{2}\right)>g(\xi)=\frac{f(s)+f(t)}{2}.
+\end{equation}
+(One easily verifies $g(\xi)=(f(s)+f(t))/2$.) This contradicts
+hypothesis.
+
+Note that we have tacitly used the fact that $h(x)=\lambda
+f(v)+(1-\lambda)f(u)$ for some $\lambda$ and $g(x)=\lambda
+f(s)+(1-\lambda)f(t)$ for some $\lambda$.
+
+%%%%%
+%%%%%
+\end{document}

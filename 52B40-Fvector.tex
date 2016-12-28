@@ -1,0 +1,105 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Fvector}
+\pmcreated{2013-03-22 16:59:10}
+\pmmodified{2013-03-22 16:59:10}
+\pmowner{mps}{409}
+\pmmodifier{mps}{409}
+\pmtitle{f-vector}
+\pmrecord{5}{39264}
+\pmprivacy{1}
+\pmauthor{mps}{409}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52B40}
+\pmsynonym{$f$-vector}{Fvector}
+\pmdefines{flag f-vector}
+\pmdefines{flag $f$-vector}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\fm}[1]{{\it #1}}
+\begin{document}
+Let \fm{P} be a polytope of dimension \fm{d}.  The \emph{f-vector} of
+\fm{P} is the finite integer sequence $(f_0, \dots, f_{d-i})$, where
+the component in position \fm{i} is the number of \fm{i}-dimensional
+faces of \fm{P}.  For some purposes it is convenient to view the empty
+face and the polytope itself as improper faces, so $f_{-1} = f_d = 1$.
+
+For example, a cube has 8 vertices, 12 edges, and 6 faces, so its
+f-vector is (8, 12, 6).
+
+The entries in the f-vector of a convex polytope satisfy the 
+Euler--Poincar\'e--Schl\"afli formula:
+\begin{equation*}
+\sum_{-1\le i\le d}(-1)^i f_i=0.
+\end{equation*}
+Consequently, the face lattice of a polytope is Eulerian. For any
+graded poset with maximum and minimum elements there is an extension
+of the f-vector called the \emph{flag f-vector}.  For any subset
+\fm{S} of $\{0,1,\dots,d - 1\}$, the $f_S$ entry of the flag
+f-vector of \fm{P} is the number of chains of faces in
+$\mathcal{L}(P)$ with dimensions coming only from \fm{S}.
+
+The flag f-vector of a three-dimensional cube is given in the
+following table.  For simplicity we drop braces and commas.
+\begin{center}
+\begin{tabular}{cl}
+\fm{S} & $f_S$ \\
+\hline
+$\emptyset$ & 1  \\
+0           & 8  \\
+1           & 12 \\
+2           & 6  \\
+01          & $8\cdot 3 = 24$ \\
+02          & $8\cdot 3 = 24$ \\
+12          & $12\cdot 2 = 24$ \\
+012         & $8\cdot 3\cdot 2 = 48$
+\end{tabular}
+\end{center}
+For example, $f_{\{1,2\}}=24$ because each of the 12 edges
+meets exactly two faces.
+
+Although the flag f-vector of a \fm{d}-polytope has $2^d$ entries,
+most of them are redundant, as they satisfy a collection of identities
+generalizing the Euler--Poincar\'e--Schl\"afli formula and called the
+generalized Dehn-Sommerville relations. Interestingly, the number of
+nonredundant entries in the flag $f$-vector of a \fm{d}-polytope is
+one less than the Fibonacci number $F_{d-1}$.
+
+\begin{thebibliography}{3}
+\bibitem{cite:BB}
+Bayer, M. and L. Billera, \emph{Generalized Dehn-Sommerville relations for
+polytopes, spheres and Eulerian partially ordered sets}, Invent. Math. 79
+(1985), no. 1, 143--157.
+\bibitem{cite:BK}
+Bayer, M. and A. Klapper, \emph{A new index for polytopes}, Discrete Comput.
+Geom. 6
+(1991), no. 1, 33--47.
+\bibitem{cite:Z}
+Ziegler, G., \emph{Lectures on polytopes}, Springer-Verlag, 1997.
+\end{thebibliography}
+
+\PMlinkescapeword{flag}
+%%%%%
+%%%%%
+\end{document}

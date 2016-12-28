@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProofOfPropertiesOfExtremeSubsetsOfAClosedConvexSet}
+\pmcreated{2013-03-22 15:25:12}
+\pmmodified{2013-03-22 15:25:12}
+\pmowner{georgiosl}{7242}
+\pmmodifier{georgiosl}{7242}
+\pmtitle{proof of properties of extreme subsets of a closed convex set}
+\pmrecord{4}{37264}
+\pmprivacy{1}
+\pmauthor{georgiosl}{7242}
+\pmtype{Proof}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52A99}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+For the first claim, it is obvious that $\bigcap_{i\in I}A_i$ is closed \PMlinkname{convex subset}{ConvexSet} of $K$. Let $z \in A$ and $0<t<1$, $x, y\in  K$ such as 
+$z=tx+(1-t)y$. Then $z \in A_i$, for all $i\in I$ so we have that $x,y \in A_i$ for all $i\in I$. Therefore $x,y \in \bigcap_{i\in I}A_i.$
+\\For the second claim suppose $x,y \in K$, $t\in(0,1)$ and  $z\in A$ such as $z=tx+(1-t)y$. From the hypothesis $A\subset B$ we have that 
+$z\in B$ and since $B$ is an extreme subset of $K$, $x,y \in  B$. Analogously from the hypothesis that $A$ is an extreme subset of $B$, we have that $x,y \in A$.
+%%%%%
+%%%%%
+\end{document}

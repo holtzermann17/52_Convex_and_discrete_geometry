@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Zonotope}
+\pmcreated{2013-03-22 15:47:20}
+\pmmodified{2013-03-22 15:47:20}
+\pmowner{mps}{409}
+\pmmodifier{mps}{409}
+\pmtitle{zonotope}
+\pmrecord{7}{37749}
+\pmprivacy{1}
+\pmauthor{mps}{409}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52B99}
+\pmsynonym{zonohedron}{Zonotope}
+\pmsynonym{zonohedra}{Zonotope}
+\pmrelated{HyperplaneArrangement}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+A \emph{zonotope} is a polytope which can be obtained as the
+\PMlinkname{Minkowski sum}{MinkowskiSum3} of finitely many 
+closed line segments in $\mathbb{R}^n$.  Three-dimensional zonotopes are also sometimes called \emph{zonohedra}.  Zonotopes are dual to finite hyperplane arrangements.  They are centrally symmetric, compact, convex sets.
+
+For example, the unit $n$-cube is the Minkowski sum of
+the line segments from the origin to the standard unit vectors $e_i$ 
+for $1\le i\le n$.  
+A hexagon is also a zonotope; for example, the Minkowski 
+sum of the line segments based at the origin with endpoints at $(1,0)$, $(1,1)$, and $(0,1)$ is a hexagon.  In fact, any projection of an $n$-cube is a zonotope.
+
+The prism of a zonotope is always a zonotope, but the pyramid of a 
+zonotope need not be.  In particular, the 
+\PMlinkname{$n$-simplex}{HomologyTopologicalSpace} is only a
+zonotope for $n\le 1$.
+
+\begin{thebibliography}{9}
+\bibitem{cite:BER}
+Billera, L., R. Ehrenborg, and M. Readdy, \emph{The $\mathbf{cd}$-index of zonotopes and arrangements}, in \emph{Mathematical essays in honor of Gian-Carlo Rota}, (B. E. Sagan and R. P. Stanley, eds.), BirkhÃ¤user, Boston, 1998, pp. 23--40.
+\bibitem{cite:Z}
+Ziegler, G., \emph{Lectures on polytopes}, Springer-Verlag, 1997.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

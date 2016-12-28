@@ -1,0 +1,126 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ClosureOfSetsClosedUnderAFinitaryOperation}
+\pmcreated{2013-03-22 17:03:29}
+\pmmodified{2013-03-22 17:03:29}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{closure of sets closed under a finitary operation}
+\pmrecord{20}{39349}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52A07}
+\pmclassification{msc}{57N17}
+\pmclassification{msc}{13J99}
+\pmclassification{msc}{22A05}
+\pmrelated{ClosureOfAVectorSubspaceIsAVectorSubspace}
+\pmrelated{ClosureOfAVectorSubspaceIsAVectorSubspace2}
+\pmrelated{FreelyGeneratedInductiveSet}
+
+\usepackage{amsthm}
+
+\def\closure{\overline}
+
+\newtheorem*{thm*}{Theorem}
+\begin{document}
+\PMlinkescapeword{algebraic}
+\PMlinkescapeword{closed}
+\PMlinkescapeword{closure}
+\PMlinkescapephrase{convex subset}
+\PMlinkescapeword{inversion}
+\PMlinkescapeword{operation}
+\PMlinkescapeword{operations}
+\PMlinkescapeword{theorem}
+
+In this entry we give a theorem that generalizes such results as
+``the \PMlinkname{closure}{Closure} of a subgroup is a subgroup''
+and ``the closure of a convex set is convex''.
+
+\section*{Theorem and proof}
+
+Since the theorem involves two different concepts of closure 
+--- algebraic and topological --- we must be careful how we phrase it.
+
+\begin{thm*}
+Let $X$ be a topological space with a continuous
+\PMlinkname{$n$-ary operation}{AlgebraicSystem} $X^n\to X$.
+If $A\subseteq X$ is closed under this operation,
+then so is $\closure{A}$.
+\end{thm*}
+
+{\bf Proof}
+
+Let $\beta$ be the $n$-ary operation,
+and suppose that $A$ is closed under this operation,
+that is, $\beta(A\times\cdots\times A)\subseteq A$.
+From the fact that the 
+\PMlinkname{closure of a product is the product of the closures}{ProductTopology},
+we have
+\[
+  \beta(\closure{A}\times\cdots\times\closure{A}) =
+  \beta(\closure{A\times\cdots\times A}).
+\]
+From the
+\PMlinkname{characterization of continuity in terms of closure}{TestingForContinuityViaClosureOperation},
+we have
+\[
+  \beta(\closure{A\times\cdots\times A}) \subseteq
+  \closure{\beta(A\times\cdots\times A)}.
+\]
+From the assumption that $\beta(A\times\cdots\times A)\subseteq A$,
+we have
+\[
+  \closure{\beta(A\times\cdots\times A)} \subseteq \closure{A}.
+\]
+Putting all this together gives
+\[
+  \beta(\closure{A}\times\cdots\times\closure{A}) \subseteq \closure{A},
+\]
+as required.
+
+\section*{Examples}
+
+If $H$ is a subgroup of a topological group $G$,
+then $H$ is closed under both the group operation
+and the operation of inversion,
+both of which are continuous,
+and therefore by the theorem $\closure{H}$
+is also closed under both operations.
+Thus the closure of a subgroup of a topological group is also a subgroup.
+
+It similarly follows that the closure of a normal subgroup 
+of a topological group is a normal subgroup.
+In this case there are additional unary operations to consider:
+the maps $x\mapsto g^{-1}xg$ for each $g$ in the group.
+But these maps are all continuous, so the theorem again applies.
+
+Note that it does not follow that the closure of a characteristic subgroup
+of a topological group is characteristic,
+because this would require applying the theorem 
+to arbitrary automorphisms of the group,
+and these automorphisms need not be continuous.
+
+Straightforward application of the theorem also shows that
+the closure of a subring of a topological ring is a subring.
+Considering also the unary operations $x\mapsto rx$ for each $r$ in the ring,
+we see that the closure of a left ideal of a topological ring is a left ideal.
+Similarly, the closure of a right ideal of a topological ring is a right ideal.
+
+We also see that
+the closure of a vector subspace of a topological vector space
+is a vector subspace.
+In this case the operations to consider are vector addition
+and for each scalar $\lambda$ the unary operation $x\mapsto\lambda x$.
+
+As a final example, we look at convex sets.
+Let $A$ be a convex subset of a real (or complex) topological vector space.
+Convexity means that for every $t\in[0,1]$ 
+the set is closed under the binary operation $(x,y)\mapsto(1-t)x+ty$.
+These binary operations are all continuous,
+so the theorem again applies, and we conclude that $\closure{A}$ is convex.
+
+%%%%%
+%%%%%
+\end{document}

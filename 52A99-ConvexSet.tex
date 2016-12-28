@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ConvexSet}
+\pmcreated{2013-03-22 11:46:35}
+\pmmodified{2013-03-22 11:46:35}
+\pmowner{drini}{3}
+\pmmodifier{drini}{3}
+\pmtitle{convex set}
+\pmrecord{20}{30243}
+\pmprivacy{1}
+\pmauthor{drini}{3}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52A99}
+\pmclassification{msc}{16G10}
+\pmclassification{msc}{11F80}
+\pmclassification{msc}{22E55}
+\pmclassification{msc}{11A67}
+\pmclassification{msc}{11F70}
+\pmclassification{msc}{06A06}
+\pmsynonym{convex}{ConvexSet}
+\pmrelated{ConvexCombination}
+\pmrelated{CaratheodorysTheorem2}
+\pmrelated{ExtremeSubsetOfConvexSet}
+\pmrelated{PropertiesOfExtemeSubsetsOfAClosedConvexSet}
+\pmdefines{polyconvex set}
+\pmdefines{polyconvex}
+
+\usepackage{graphicx}
+%%%%%\usepackage{xypic} 
+\usepackage{bbm}
+\newcommand{\Z}{\mathbbmss{Z}}
+\newcommand{\C}{\mathbbmss{C}}
+\newcommand{\R}{\mathbbmss{R}}
+\newcommand{\Q}{\mathbbmss{Q}}
+\newcommand{\mathbb}[1]{\mathbbmss{#1}}
+\newcommand{\figura}[1]{\begin{center}\includegraphics{#1}\end{center}}
+\newcommand{\figuraex}[2]{\begin{center}\includegraphics[#2]{#1}\end{center}}
+\begin{document}
+Let $S$ a subset of $\mathbb{R}^n$. We say that $S$ is \emph{convex} when, for any pair of points $A,B$ in $S$, the segment $\overline{AB}$ lies entirely inside $S$.\smallskip
+
+The former statement is equivalent to saying that for any pair of vectors $u,v$ in $S$, the vector $(1-t)u+tv$ is in $S$ for all $t\in[0,1]$.\smallskip
+
+If $S$ is a convex set, for any $u_1,u_2,\ldots,u_r$ in $S$, and any positive numbers $\lambda_1,\lambda_2,\ldots,\lambda_r$ such that $\lambda_1+\lambda_2+\cdots+\lambda_r=1$ the vector
+$$\sum_{k=1}^r\lambda_k u_k$$
+is in $S$.\medskip
+
+Examples of convex sets in the plane are circles, triangles, and ellipses.
+The definition given above can be generalized to any real vector space:
+
+Let $V$ be  a vector space (over $\R$ or $\C$). A subset $S$ of $V$ 
+is \emph{convex} if for all points $x,y$ in $S$, the line segment
+$\{\alpha x + (1-\alpha) y \mid  \alpha\in(0,1)\} $ is also in $S$.
+
+More generally, the same definition works for any vector space over an
+ordered field.
+
+A \emph{polyconvex set} is a finite union of compact, convex sets.
+
+\textbf{Remark}.  The notion of convexity can be generalized to an arbitrary partially ordered set: given a poset $P$ (with partial ordering $\le$), a subset $C$ of $P$ is said to be \emph{convex} if for any $a,b\in C$, if $c\in P$ is between $a$ and $b$, that is, $a\le c \le b$, then $c\in C$.
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+\end{document}

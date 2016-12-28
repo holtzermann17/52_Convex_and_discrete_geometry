@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FaceOfAConvexSetAlternativeDefinitionOf}
+\pmcreated{2013-03-22 17:02:02}
+\pmmodified{2013-03-22 17:02:02}
+\pmowner{mps}{409}
+\pmmodifier{mps}{409}
+\pmtitle{face of a convex set, alternative definition of}
+\pmrecord{4}{39320}
+\pmprivacy{1}
+\pmauthor{mps}{409}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52A99}
+\pmsynonym{face}{FaceOfAConvexSetAlternativeDefinitionOf}
+\pmdefines{supporting hyperplane}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The following definition of a face of a convex set in a real vector
+space is sometimes useful.
+
+Let $C$ be a convex subset of $\mathbb{R}^n$.  Before we define faces,
+we introduce oriented hyperplanes and supporting hyperplanes.
+
+Given any vectors $n$ and $p$ in $\mathbb{R}^n$, define the hyperplane
+$H(n,p)$ by
+\[
+  H(n,p) = \{ x \in \mathbb{R}^n \colon n \cdot (x - p) = 0 \};
+\]
+note that this is the degenerate hyperplane $\mathbb{R}^n$ if $n=0$.
+As long as $H(n,p)$ is nondegenerate, its removal disconnects
+$\mathbb{R}^n$.  The \emph{upper halfspace} of $\mathbb{R}^n$ determined by
+$H(n,p)$ is
+\[
+   H(n,p)^+ = \{ x \in \mathbb{R}^n \colon n \cdot (x - p) \ge 0 \}.
+\]
+A hyperplane $H(n,p)$ is a \emph{supporting hyperplane} for
+$C$ if its upper halfspace contains $C$, that is, if $C\subset H(n.p)^+$.
+
+Using this terminology, we can define a \emph{face} of a convex set
+$C$ to be the intersection of $C$ with a supporting hyperplane of $C$.
+Notice that we still get the empty set and $C$ as improper faces of $C$.
+
+\textbf{Remarks.}  Let $C$ be a convex set.
+\begin{itemize}
+\item
+If $F_1 = C\cap H(n_1,p_1)$ and $F_2 = C\cap H(n_2,p_2)$ are faces
+of $C$ intersecting in a point $p$, then $H(n_1+n_2,p)$ is a
+supporting hyperplane of $C$, and $F_1\cap F_2 = C\cap H(n_1+n_2,p)$.
+This shows that the faces of $C$ form a meet-semilattice.
+
+\item
+Since each proper face lies on the base of the upper halfspace of some
+supporting hyperplane, each such face must lie on the relative
+boundary of $C$.
+\end{itemize}
+
+\PMlinkescapeword{base}
+%%%%%
+%%%%%
+\end{document}

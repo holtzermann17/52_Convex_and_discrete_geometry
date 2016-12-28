@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{InternalPoint}
+\pmcreated{2013-03-22 14:25:04}
+\pmmodified{2013-03-22 14:25:04}
+\pmowner{jirka}{4157}
+\pmmodifier{jirka}{4157}
+\pmtitle{internal point}
+\pmrecord{5}{35923}
+\pmprivacy{1}
+\pmauthor{jirka}{4157}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52A99}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\theoremstyle{theorem}
+\newtheorem*{thm}{Theorem}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{conj}{Conjecture}
+\newtheorem*{cor}{Corollary}
+\newtheorem*{example}{Example}
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+\begin{document}
+\begin{defn}
+Let $X$ be a vector space and $S \subset X$.  Then $x \in S$ is called an
+{\em internal point} of $S$ if and only if the intersection of each line in $X$ through $x$ and $S$ contains a small interval around $x$.
+\end{defn}
+
+That is $x$ is an internal point of $S$ if whenever $y \in X$ there exists an $\epsilon > 0$ such that $x + ty \in S$ for all $t < \epsilon$.
+
+If $X$ is a topological vector space and $x$ is in the interior of $S$, then it is an internal point, but the converse is not true in general.  However if $S \subset {\mathbb{R}}^n$ is a convex set then all internal points are interior points and vice versa.
+
+\begin{thebibliography}{9}
+\bibitem{royden}
+H.\@ L.\@ Royden. \emph{\PMlinkescapetext{Real Analysis}}. Prentice-Hall, Englewood Cliffs, New Jersey, 1988
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

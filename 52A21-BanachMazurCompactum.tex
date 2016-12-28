@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{BanachMazurCompactum}
+\pmcreated{2013-03-22 14:55:24}
+\pmmodified{2013-03-22 14:55:24}
+\pmowner{bbukh}{348}
+\pmmodifier{bbukh}{348}
+\pmtitle{Banach-Mazur compactum}
+\pmrecord{5}{36611}
+\pmprivacy{1}
+\pmauthor{bbukh}{348}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{52A21}
+\pmclassification{msc}{46B20}
+\pmdefines{Banach-Mazur metric}
+\pmdefines{Banach-Mazur distance}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\newcommand*{\norm}[1]{\lVert #1\rVert} 
+% Note the absence of \left and \right
+% This is on purpose (compare the rendering of entry with 
+% \left and \right to understand)
+
+\makeatletter
+\@ifundefined{bibname}{}{\renewcommand{\bibname}{References}}
+\makeatother
+\begin{document}
+\PMlinkescapeword{distance}
+
+The \emph{Banach-Mazur metric} is a distance on the space of all
+\PMlinkid{isomorphic}{Isomorphism2} Banach spaces. If $B_1,B_2$ are $n$-dimensional Banach
+spaces, the distance between them is
+\begin{equation*}
+d(B_1,B_2)=\ln\inf \{\,\norm{T}\cdot\norm{T^{-1}} : T\in
+GL(B_1,B_2)\,\}.
+\end{equation*}
+Then $d$ satisfies the triangle inequality, and $d(B_1,B_2)=0$ if
+and only if $B_1$ and $B_2$ are isometric. The space of isometry
+\PMlinkid{classes}{EquivalenceRelation} of $n$-dimensional Banach spaces under this metric is a compact metric space, known as a \emph{Banach-Mazur compactum}.
+%%%%%
+%%%%%
+\end{document}
