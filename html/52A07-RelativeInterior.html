@@ -1,0 +1,169 @@
+<!DOCTYPE html><html>
+<head>
+<title>relative interior</title>
+<!--Generated on Fri Feb  9 22:15:40 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">relative interior</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+<p class="ltx_p">Let <math id="p1.m1" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math> be a subset of the <math id="p1.m2" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>-dimensional Euclidean space <math id="p1.m3" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math>. The <em class="ltx_emph ltx_font_italic">relative interior</em> of <math id="p1.m4" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math> is the interior of <math id="p1.m5" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math> considered as a subset of its affine hull <math id="p1.m6" class="ltx_Math" alttext="\operatorname{Aff}(S)" display="inline"><mrow><mi>Aff</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>S</mi><mo stretchy="false">)</mo></mrow></mrow></math>, and is denoted by <math id="p1.m7" class="ltx_Math" alttext="\operatorname{ri}(S)" display="inline"><mrow><mi>ri</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>S</mi><mo stretchy="false">)</mo></mrow></mrow></math>.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">The difference between the interior and the relative interior of <math id="p2.m1" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math> can be illustrated in the following two examples. Consider the closed unit square</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="I^{2}:=\{(x,y,0)\mid 0\leq x,y\leq 1\}" display="block"><mrow><msup><mi>I</mi><mn>2</mn></msup><mo>:=</mo><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>∣</mo><mrow><mrow><mn>0</mn><mo>≤</mo><mi>x</mi></mrow><mo>,</mo><mrow><mi>y</mi><mo>≤</mo><mn>1</mn></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">in <math id="p2.m2" class="ltx_Math" alttext="\mathbb{R}^{3}" display="inline"><msup><mi>ℝ</mi><mn>3</mn></msup></math>. Its interior is <math id="p2.m3" class="ltx_Math" alttext="\varnothing" display="inline"><mi mathvariant="normal">∅</mi></math>, the empty set. However, its relative interior is</p>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="\operatorname{ri}(I^{2})=\{(x,y,0)\mid 0&lt;x,y&lt;1\}," display="block"><mrow><mrow><mrow><mi>ri</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>I</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>∣</mo><mrow><mrow><mn>0</mn><mo>&lt;</mo><mi>x</mi></mrow><mo>,</mo><mrow><mi>y</mi><mo>&lt;</mo><mn>1</mn></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">since <math id="p2.m4" class="ltx_Math" alttext="\operatorname{Aff}(I^{2})" display="inline"><mrow><mi>Aff</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>I</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow></math> is the <math id="p2.m5" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>-<math id="p2.m6" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> plane <math id="p2.m7" class="ltx_Math" alttext="\{(x,y,0)\mid x,y\in\mathbb{R}\}" display="inline"><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>∣</mo><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>ℝ</mi></mrow><mo stretchy="false">}</mo></mrow></math>. Next, consider the closed unit cube</p>
+<table id="S0.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex3.m1" class="ltx_Math" alttext="I^{3}:=\{(x,y,z)\mid 0\leq x,y,z\leq 1\}" display="block"><mrow><msup><mi>I</mi><mn>3</mn></msup><mo>:=</mo><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>∣</mo><mrow><mrow><mn>0</mn><mo>≤</mo><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow></mrow><mo>,</mo><mrow><mi>z</mi><mo>≤</mo><mn>1</mn></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">in <math id="p2.m8" class="ltx_Math" alttext="\mathbb{R}^{3}" display="inline"><msup><mi>ℝ</mi><mn>3</mn></msup></math>. The interior and the relative interior of <math id="p2.m9" class="ltx_Math" alttext="I^{3}" display="inline"><msup><mi>I</mi><mn>3</mn></msup></math> are the same:</p>
+<table id="S0.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex4.m1" class="ltx_Math" alttext="\operatorname{int}(I^{3})=\operatorname{ri}(I^{3})=\{(x,y,z)\mid 0&lt;x,y,z&lt;1\}." display="block"><mrow><mrow><mrow><mi>int</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>I</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ri</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>I</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>∣</mo><mrow><mrow><mn>0</mn><mo>&lt;</mo><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow></mrow><mo>,</mo><mrow><mi>z</mi><mo>&lt;</mo><mn>1</mn></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Remarks</span>.</p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i1.p1" class="ltx_para">
+<p class="ltx_p">As another example, the relative interior of a point is the point, whereas the interior of a point is <math id="I1.i1.p1.m1" class="ltx_Math" alttext="\varnothing" display="inline"><mi mathvariant="normal">∅</mi></math>.</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i2.p1" class="ltx_para">
+<p class="ltx_p">It is true that if <math id="I1.i2.p1.m1" class="ltx_Math" alttext="T\subseteq S" display="inline"><mrow><mi>T</mi><mo>⊆</mo><mi>S</mi></mrow></math>, then <math id="I1.i2.p1.m2" class="ltx_Math" alttext="\operatorname{int}(T)\subseteq\operatorname{int}(S)" display="inline"><mrow><mrow><mi>int</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⊆</mo><mrow><mi>int</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>S</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. However, this is not the case for the relative interior operator <math id="I1.i2.p1.m3" class="ltx_Math" alttext="\operatorname{ri}" display="inline"><mi>ri</mi></math>, as shown by the above two examples: <math id="I1.i2.p1.m4" class="ltx_Math" alttext="\varnothing\neq I^{2}\subseteq I^{3}" display="inline"><mrow><mi mathvariant="normal">∅</mi><mo>≠</mo><msup><mi>I</mi><mn>2</mn></msup><mo>⊆</mo><msup><mi>I</mi><mn>3</mn></msup></mrow></math>, but <math id="I1.i2.p1.m5" class="ltx_Math" alttext="\operatorname{ri}(I^{2})\cap\operatorname{ri}(I^{3})=\varnothing" display="inline"><mrow><mrow><mrow><mi>ri</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>I</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo>∩</mo><mrow><mi>ri</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>I</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mi mathvariant="normal">∅</mi></mrow></math>.</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i3.p1" class="ltx_para">
+<p class="ltx_p">The companion concept of the relative interior of a set <math id="I1.i3.p1.m1" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math> is the <em class="ltx_emph ltx_font_italic">relative boundary</em> of <math id="I1.i3.p1.m2" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math>: it is the boundary of <math id="I1.i3.p1.m3" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math> in <math id="I1.i3.p1.m4" class="ltx_Math" alttext="\operatorname{Aff}(S)" display="inline"><mrow><mi>Aff</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>S</mi><mo stretchy="false">)</mo></mrow></mrow></math>, denoted by <math id="I1.i3.p1.m5" class="ltx_Math" alttext="\operatorname{rbd}(S)" display="inline"><mrow><mi>rbd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>S</mi><mo stretchy="false">)</mo></mrow></mrow></math>. Equivalently, <math id="I1.i3.p1.m6" class="ltx_Math" alttext="\operatorname{rbd}(S)=\overline{S}-\operatorname{ri}(S)" display="inline"><mrow><mrow><mi>rbd</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>S</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mover accent="true"><mi>S</mi><mo>¯</mo></mover><mo>-</mo><mrow><mi>ri</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>S</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>, where <math id="I1.i3.p1.m7" class="ltx_Math" alttext="\overline{S}" display="inline"><mover accent="true"><mi>S</mi><mo>¯</mo></mover></math> is the closure of <math id="I1.i3.p1.m8" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math>.
+</p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i4.p1" class="ltx_para">
+<p class="ltx_p"><math id="I1.i4.p1.m1" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math> is said to be <em class="ltx_emph ltx_font_italic">relatively open</em> if <math id="I1.i4.p1.m2" class="ltx_Math" alttext="S=\operatorname{ri}(S)" display="inline"><mrow><mi>S</mi><mo>=</mo><mrow><mi>ri</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>S</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.</p>
+</div>
+</li>
+<li id="I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i5.p1" class="ltx_para">
+<p class="ltx_p">All of the definitions above can be generalized to convex sets in a topological vector space.</p>
+</div>
+</li>
+</ul>
+<table class="ltx_tabular ltx_align_right ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">relative interior</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">RelativeInterior</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 16:20:07</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 16:20:07</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">CWoo (3771)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">CWoo (3771)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">13</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">CWoo (3771)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Definition</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 52A07</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 52A15</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 51N10</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 52A20</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Defines</th>
+<td class="ltx_td ltx_align_left ltx_border_r">relative boundary</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Defines</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">relatively open</td>
+</tr>
+</tbody>
+</table>
+<p class="ltx_p ltx_align_right"></p>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 22:15:40 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

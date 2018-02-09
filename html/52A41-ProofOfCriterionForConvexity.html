@@ -1,0 +1,181 @@
+<!DOCTYPE html><html>
+<head>
+<title>proof of criterion for convexity</title>
+<!--Generated on Fri Feb  9 22:16:14 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">proof of criterion for convexity</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+</div>
+<div id="Thmthm1" class="ltx_theorem ltx_theorem_thm">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Theorem 1</span>.</h6>
+<div id="Thmthm1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Suppose <math id="Thmthm1.p1.m1" class="ltx_Math" alttext="f\colon(a,b)\to\mathbb{R}" display="inline"><mrow><mi>f</mi><mo mathvariant="normal">:</mo><mrow><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>a</mi><mo mathvariant="normal">,</mo><mi>b</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow><mo mathvariant="normal">→</mo><mi mathvariant="normal">R</mi></mrow></mrow></math> is continuous and that,
+for all <math id="Thmthm1.p1.m2" class="ltx_Math" alttext="x,y\in(a,b)" display="inline"><mrow><mrow><mi>x</mi><mo mathvariant="normal">,</mo><mi>y</mi></mrow><mo mathvariant="normal">∈</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>a</mi><mo mathvariant="normal">,</mo><mi>b</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow></math>,</span></p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="f\left({x+y\over 2}\right)\leq{f(x)+f(y)\over 2}." display="block"><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo>(</mo><mfrac><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mn>2</mn></mfrac><mo>)</mo></mrow></mrow><mo>≤</mo><mfrac><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mn>2</mn></mfrac></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Then <math id="Thmthm1.p1.m3" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is convex.
+</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Proof.</h6>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">We begin by showing that, for any natural numbers <math id="p2.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> and <math id="p2.m2" class="ltx_Math" alttext="m\leq 2^{n}" display="inline"><mrow><mi>m</mi><mo>≤</mo><msup><mn>2</mn><mi>n</mi></msup></mrow></math>,</p>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="f\left({mx+(2^{n}-m)y\over 2^{n}}\right)\leq{mf(x)+(2^{n}-m)f(y)\over 2^{n}}" display="block"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo>(</mo><mfrac><mrow><mrow><mi>m</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>-</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>y</mi></mrow></mrow><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo>)</mo></mrow></mrow><mo>≤</mo><mfrac><mrow><mrow><mi>m</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>-</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">by induction. When <math id="p2.m3" class="ltx_Math" alttext="n=1" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow></math>, there are three possibilities: <math id="p2.m4" class="ltx_Math" alttext="m=1" display="inline"><mrow><mi>m</mi><mo>=</mo><mn>1</mn></mrow></math>, <math id="p2.m5" class="ltx_Math" alttext="m=0" display="inline"><mrow><mi>m</mi><mo>=</mo><mn>0</mn></mrow></math>,
+and <math id="p2.m6" class="ltx_Math" alttext="m=2" display="inline"><mrow><mi>m</mi><mo>=</mo><mn>2</mn></mrow></math>. The first possibility is a hypothesis of the theorem being
+proven and the other two possibilities are trivial.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Assume that</p>
+<table id="S0.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex3.m1" class="ltx_Math" alttext="f\left({m^{\prime}x+(2^{n}-m^{\prime})y\over 2^{n}}\right)\leq{m^{\prime}f(x)+%
+(2^{n}-m^{\prime})f(y)\over 2^{n}}" display="block"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo>(</mo><mfrac><mrow><mrow><msup><mi>m</mi><mo>′</mo></msup><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>-</mo><msup><mi>m</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>y</mi></mrow></mrow><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo>)</mo></mrow></mrow><mo>≤</mo><mfrac><mrow><mrow><msup><mi>m</mi><mo>′</mo></msup><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>-</mo><msup><mi>m</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">for some <math id="p3.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> and all <math id="p3.m2" class="ltx_Math" alttext="m^{\prime}\leq 2^{n}" display="inline"><mrow><msup><mi>m</mi><mo>′</mo></msup><mo>≤</mo><msup><mn>2</mn><mi>n</mi></msup></mrow></math>. Let <math id="p3.m3" class="ltx_Math" alttext="m" display="inline"><mi>m</mi></math> be a number less than or equal
+to <math id="p3.m4" class="ltx_Math" alttext="2^{n+1}" display="inline"><msup><mn>2</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></math>. Then either <math id="p3.m5" class="ltx_Math" alttext="m\leq 2^{n}" display="inline"><mrow><mi>m</mi><mo>≤</mo><msup><mn>2</mn><mi>n</mi></msup></mrow></math> or <math id="p3.m6" class="ltx_Math" alttext="2^{n+1}-m\leq 2^{n}" display="inline"><mrow><mrow><msup><mn>2</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>-</mo><mi>m</mi></mrow><mo>≤</mo><msup><mn>2</mn><mi>n</mi></msup></mrow></math>. In the
+former case we have</p>
+<table id="S0.EGx1" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="S0.Ex4" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex4.m1" class="ltx_Math" alttext="\displaystyle f\left({1\over 2}{mx+(2^{n}-m)y\over 2^{n}}+{y\over 2}\right)" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mrow><mi>m</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>-</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>y</mi></mrow></mrow><msup><mn>2</mn><mi>n</mi></msup></mfrac></mstyle></mrow><mo>+</mo><mstyle displaystyle="true"><mfrac><mi>y</mi><mn>2</mn></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex4.m2" class="ltx_Math" alttext="\displaystyle\leq{1\over 2}\left(f\left({mx+(2^{n}-m)y\over 2^{n}}\right)+f(y)\right)" display="inline"><mrow><mi></mi><mo>≤</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mrow><mrow><mi>m</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>-</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>y</mi></mrow></mrow><msup><mn>2</mn><mi>n</mi></msup></mfrac></mstyle><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S0.Ex5" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex5.m2" class="ltx_Math" alttext="\displaystyle\leq{1\over 2}{mf(x)+(2^{n}-m)f(y)\over 2^{n}}+{f(y)\over 2}" display="inline"><mrow><mi></mi><mo>≤</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mrow><mi>m</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>-</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><msup><mn>2</mn><mi>n</mi></msup></mfrac></mstyle></mrow><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mn>2</mn></mfrac></mstyle></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S0.Ex6" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex6.m2" class="ltx_Math" alttext="\displaystyle={mf(x)+(2^{n+1}-m)f(y)\over 2^{n+1}}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mrow><mi>m</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mn>2</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>-</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><msup><mn>2</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac></mstyle></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">In the other case, we can reverse the roles of <math id="p3.m7" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> and <math id="p3.m8" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Now, every real number <math id="p4.m1" class="ltx_Math" alttext="s" display="inline"><mi>s</mi></math> has a binary expansion; in other words, there
+exists a sequence <math id="p4.m2" class="ltx_Math" alttext="\{m_{n}\}" display="inline"><mrow><mo stretchy="false">{</mo><msub><mi>m</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow></math> of integers such that <math id="p4.m3" class="ltx_Math" alttext="\lim_{n\to\infty}m_{n}/2^{n}=s" display="inline"><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></msub><mo>⁡</mo><mrow><msub><mi>m</mi><mi>n</mi></msub><mo>/</mo><msup><mn>2</mn><mi>n</mi></msup></mrow></mrow><mo>=</mo><mi>s</mi></mrow></math>. If <math id="p4.m4" class="ltx_Math" alttext="0\leq s\leq 1" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi>s</mi><mo>≤</mo><mn>1</mn></mrow></math>, then we also have <math id="p4.m5" class="ltx_Math" alttext="0\leq m_{n}\leq 2^{n}" display="inline"><mrow><mn>0</mn><mo>≤</mo><msub><mi>m</mi><mi>n</mi></msub><mo>≤</mo><msup><mn>2</mn><mi>n</mi></msup></mrow></math>
+so, by what we proved above,</p>
+<table id="S0.Ex7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex7.m1" class="ltx_Math" alttext="f\left({m_{n}x+(2^{n}-m_{n})y\over 2^{n}}\right)\leq{m_{n}f(x)+(2^{n}-m_{n})f(%
+y)\over 2^{n}}." display="block"><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo>(</mo><mfrac><mrow><mrow><msub><mi>m</mi><mi>n</mi></msub><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>-</mo><msub><mi>m</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>y</mi></mrow></mrow><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo>)</mo></mrow></mrow><mo>≤</mo><mfrac><mrow><mrow><msub><mi>m</mi><mi>n</mi></msub><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>-</mo><msub><mi>m</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><msup><mn>2</mn><mi>n</mi></msup></mfrac></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Since <math id="p4.m6" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is assumed to be continuous, we may take the limit of both
+sides and conclude</p>
+<table id="S0.Ex8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex8.m1" class="ltx_Math" alttext="f(sx+(1-s)y)\leq sf(x)+(1-s)f(y)," display="block"><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>s</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>s</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>y</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mrow><mi>s</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>s</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">which implies that <math id="p4.m7" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is convex.
+∎</p>
+</div>
+</div>
+<div id="p5" class="ltx_para ltx_align_right">
+<table class="ltx_tabular ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">proof of criterion for convexity</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">ProofOfCriterionForConvexity</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 17:00:23</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 17:00:23</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">rspuzio (6075)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">rspuzio (6075)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">5</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">rspuzio (6075)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Proof</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 52A41</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 26A51</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">msc 26B25</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 22:16:14 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>
